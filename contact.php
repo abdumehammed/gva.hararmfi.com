@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Default size for desktop */
+        .logo {
+            max-width: 100px;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 80px;
+            }
+        }
+
+        .form-control.is-invalid {
+            border-color: #dc3545;
+        }
+
+        .form-control.is-valid {
+            border-color: #198754;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Harar Microfinance Institute S.C.</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function enableSubmitBtn() {
+            document.getElementById("mySubmitBtn").disabled = false;
+
+        }
+    </script>
+
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="scss/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/snowflake.css">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--tab icon  -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
+    <meta content="microfinance, loans, savings, Harar, Ethiopia, financial services" name="keywords">
+    <meta content="Harar Microfinance Institute S.C. provides financial services including loans, savings, and Islamic products in Ethiopia." name="description">
+
+</head>
+
+<body>
+
+
+
+ <!-- Topbar Start -->
+        <?php
+        include 'Assets/includes/topbar.php';
+        ?>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+
+ <?php
+        include 'Assets/includes/header.php';
+        ?>
+   <!-- Navbar & Hero End -->
+
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid contact bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="display-4 text-primary">Contact Us</h4>
+                <h1 class="display-4 mb-4">We love hearing from you</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="contact-add-item">
+                                <div class="contact-icon text-primary mb-4">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p class="mb-5">Harar,Ethiopia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="contact-add-item">
+                                <div class="contact-icon text-primary mb-4">
+                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>Telephone</h4>
+                                    <p class="mb-0">+251-256-663745</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="contact-add-item">
+                                <div class="contact-icon text-primary mb-4">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>E-Mail</h4>
+                                    <p class="mb-0">contactcenter@hararmfi.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-img d-flex justify-content-center">
+                        <div class="contact-img-inner">
+                            <img src="img/contacus.jpg" loading="lazy" class="img-fluid w-100" alt="Image">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <div>
+                        <h4 class="text-primary">Send Your Message</h4>
+                        <!-- Success/Error Message Display -->
+                        <!-- Display Success or Error Messages Here -->
+                        <?php if (isset($_GET['success']) && $_GET['success'] == 'true'): ?>
+                            <div class="alert alert-success">Thank you for Your feedback ,Your message has been sent successfully!</div>
+                        <?php elseif (isset($_GET['error']) && $_GET['error'] == 'true'): ?>
+                            <div class="alert alert-danger">There was an error sending your message. Please try again later.</div>
+                        <?php endif; ?>
+                        <form id="contactForm" action="send.php" method="post" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <!-- Name Field -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name <span style="color:red">*</span></label>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                </div>
+                                <!-- Email Field -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email<span style="color:red">*</span></label>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <!-- Subject Field -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <!-- Message Field -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Leave a message here" style="height: 200px" required></textarea>
+                                        <label for="message">Message<span style="color:red">*</span></label>
+                                        <div class="invalid-feedback">Please leave a message.</div>
+                                    </div>
+                                </div>
+                                <!-- Submit Button -->
+                                <div class="g-recaptcha" data-sitekey="6Leo1aErAAAAAFdN5fX61HFqF8tKBrlLV5j-7cP1" data-callback="enableSubmitBtn"></div>
+                                <div class="col-12">
+                                    <button type="submit" id="mySubmitBtn" class="btn btn-primary w-100 py-3" disabled="disabled">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+
+
+
+
+                    </div>
+                </div>
+                <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+                <script>
+                    // Bootstrap Validation
+                    (function() {
+                        'use strict';
+                        var forms = document.querySelectorAll('.needs-validation');
+                        Array.prototype.slice.call(forms).forEach(function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    })();
+                </script>
+            </div>
+            <div class="row g-5 ">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="rounded">
+                        <iframe class="rounded w-100 py-3 px-3"
+                            style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.618406946123!2d42.12451493969717!3d9.312273015806987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bdb91ace6319%3A0x1ad25cb41c4e8ac6!2sOriental%20Studio%20harar!5e0!3m2!1sen!2set!4v1725891413837!5m2!1sen!2set"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+      <!-- Footer Start -->
+    <?php include 'Assets/includes/footer.php'; ?>
+        <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6811eb2400e88619103f2de7/1iq2vt1rr';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
