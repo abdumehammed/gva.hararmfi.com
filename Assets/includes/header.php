@@ -64,7 +64,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                     </div>
 
                     <!-- About -->
-                    <a href="News.php" class="nav-item nav-link <?= ($currentPage == 'News.php') ? 'active' : '' ?>">
+                    <a href="news.php" class="nav-item nav-link <?= ($currentPage == 'news.php') ? 'active' : '' ?>">
                         News
                     </a>
                     <!-- Contact Us -->
