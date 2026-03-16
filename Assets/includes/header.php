@@ -7,7 +7,6 @@
 // Detect current page
 $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
-
 <div class="container-fluid nav-bar px-0 px-lg-1 py-lg-0">
     <div class="container" style="justify-content:space-evenly">
         <nav style="padding: 0px" class="navbar navbar-expand-lg navbar-light">

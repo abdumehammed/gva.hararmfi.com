@@ -147,10 +147,10 @@
     <!-- Modals -->
     <!-- News Modal 1 -->
     <div class="modal fade" id="newsModal1" tabindex="-1" aria-labelledby="newsModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="newsModal1Label">የሐረር ብድርና ቁጠባ ተቋም አክስዮን ማህበር የባለአክሲዮኖች 1<sup>ኛ</sup> አስቸኳይ ጠቅላላ ጉባኤ ጥሪ</h5>
+                    <h5 class="modal-title" id="newsModal1Label">የሐረር ብድርና ቁጠባ ተቋም አክስዮን ማህበር የባለአክሲዮኖች 1<sup>ኛ</sup>  አስቸኳይ ጠቅላላ ጉባኤ ጥሪ</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -167,7 +167,7 @@
 
     <!-- News Modal 2 -->
     <div class="modal fade" id="newsModal2" tabindex="-1" aria-labelledby="newsModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="newsModal2Label">የሐረር ብድርና ቁጠባ ተቋም አክስዮን ማህበር ባለአክሲዮኖች 1ኛ መደበኛ ጠቅላላ ጉባኤ ጥሪ
