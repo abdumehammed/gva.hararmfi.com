@@ -203,11 +203,6 @@
     </script>
  -->
 
-    <!-- Topbar Start -->
-        <?php
-        include 'Assets/includes/topbar.php';
-        ?>
-    <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
 
@@ -217,7 +212,8 @@
   <!-- Simple Slider -->
     <div class="simple-slider">
         <div class="slides">
-            <img src="/data1/images/aa.webp" alt="Image 1" />
+   
+            <img src="/data1/images/aa.webp" alt="Image 2" />
             <img src="/data1/images/bb.webp" alt="Image 2" />
             <img src="/data1/images/cc.webp" alt="Image 3" />
         </div>

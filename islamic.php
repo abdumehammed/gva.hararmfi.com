@@ -111,11 +111,7 @@
 <body>
 
     <!-- Spinner End -->
- <!-- Topbar Start -->
-        <?php
-        include 'Assets/includes/topbar.php';
-        ?>
-    <!-- Topbar End -->
+
 
     <!-- Navbar & Hero Start -->
 

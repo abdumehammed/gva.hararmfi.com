@@ -23,7 +23,8 @@
                         </div>
 
                         <div class="ps-3">
-                            <a href="https://mail.ethionet.et/webmail/login/login.do" target="_blank" title="Webmail">
+                            <a href="webmail.hararmfi.com" class="text-muted small"
+                                target="_blank" title="Webmail">
                                 <img src="img/webmail_logo.png" alt="Webmail"
                                     style="height:14px;vertical-align:middle;">
                             </a>

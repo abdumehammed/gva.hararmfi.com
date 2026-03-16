@@ -1,3 +1,8 @@
+    <!-- Topbar Start -->
+        <?php
+        include 'Assets/includes/topbar.php';
+        ?>
+    <!-- Topbar End -->
 <?php
 // Detect current page
 $currentPage = basename($_SERVER['PHP_SELF']);
@@ -28,6 +33,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                     <a href="index.php" class="nav-item nav-link <?= ($currentPage == 'index.php') ? 'active' : '' ?>">
                         Home
                     </a>
+                    
 
                     <!-- About -->
                     <a href="about.php" class="nav-item nav-link <?= ($currentPage == 'about.php') ? 'active' : '' ?>">
@@ -57,6 +63,10 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         </div>
                     </div>
 
+                    <!-- About -->
+                    <a href="News.php" class="nav-item nav-link <?= ($currentPage == 'News.php') ? 'active' : '' ?>">
+                        News
+                    </a>
                     <!-- Contact Us -->
                     <a href="contact.php"
                        class="nav-item nav-link <?= ($currentPage == 'contact.php') ? 'active' : '' ?>">
