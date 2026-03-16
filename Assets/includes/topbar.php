@@ -19,7 +19,7 @@
                         </div>
                         <div class="ps-3">
                             <a href="mailto:contactcenter@hararmfi.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>hither@hararmfi.com</a>
+                                    class="fas fa-envelope text-primary me-2"></i>ContactCenter@hararmfi.com</a>
                         </div>
 
                         <div class="ps-3">

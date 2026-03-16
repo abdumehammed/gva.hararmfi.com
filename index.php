@@ -214,31 +214,7 @@
  <?php
         include 'Assets/includes/header.php';
         ?>
-   <!-- Navbar & Hero End -->
-
-
-    <!-- slider starts -->
-    <!-- <div id="wowslider-container1">
-        <div class="ws_images">
-            <ul>
-                <li>
-                    <img src="/data1/images/aa.png" loading="lazy" alt="css image gallery" title=""   object-fit="contain"  />
-                </li>
-                <li>
-                    <img src="/data1/images/bb.png" loading="lazy" alt="1" title="" id="wows1_1"    object-fit="contain"/>
-                </li>
-                <li>
-                    <img src="/data1/images/cc.png" loading="lazy" alt="1" title="" id="wows1_1"    object-fit="contain" />
-                </li>
-            </ul>
-        </div>
-
-        <div class="ws_shadow"></div>
-    </div>
- -->
-
-
-    <!-- Simple Slider -->
+  <!-- Simple Slider -->
     <div class="simple-slider">
         <div class="slides">
             <img src="/data1/images/aa.webp" alt="Image 1" />
@@ -250,9 +226,6 @@
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
-
-
-
 
     <!-- Feature Start -->
     <div class="container-fluid feature bg-light py-1">
