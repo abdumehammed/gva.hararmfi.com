@@ -485,6 +485,24 @@
         </div>
     </div>
 
+
+
+    <!-- News Modal -->
+    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width: 95%;">
+            <div class="modal-content" style="height: 90vh;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModalLabel">Latest News</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0" style="height: calc(100% - 56px); overflow-y: auto;">
+                    <?php include 'news-items.php'; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News Modal End -->
+
     <!-- FAQs Start -->
     <div class="container-fluid faq-section bg-light py-1">
         <div class="container py-1">
@@ -928,6 +946,43 @@
     <script src="js/tab.js"></script>
     <script src="engine1/wowslider.js"></script>
     <script src="engine1/script.js"></script>
+    <script>
+        (function () {
+            function openNewsModal() {
+                var modalEl = document.getElementById('newsModal');
+                if (modalEl && window.bootstrap) {
+                    var newsModal = new bootstrap.Modal(modalEl);
+                    newsModal.show();
+                }
+            }
+
+            // Expose for other code (e.g., nav link click)
+            window.openNewsModal = openNewsModal;
+
+            function init() {
+                // Auto-open on page load
+                openNewsModal();
+
+                // Keep News nav item from navigating away when already on index
+                var navNews = document.getElementById('nav-news');
+                if (navNews) {
+                    navNews.addEventListener('click', function (e) {
+                        var path = window.location.pathname.toLowerCase();
+                        if (path.endsWith('index.php') || path.endsWith('/') || path.endsWith('index.html')) {
+                            e.preventDefault();
+                            openNewsModal();
+                        }
+                    });
+                }
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
     <!--Start of Tawk.to Script-->
     <!-- <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();

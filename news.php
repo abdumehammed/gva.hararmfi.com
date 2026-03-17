@@ -103,7 +103,7 @@
         <div class="filter-buttons">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="Announcements">Announcements</button>
-            <button class="filter-btn" data-filter="awards">Awards</button>
+            <button class="filter-btn" data-filter="news">news</button>
             <!-- <button class="filter-btn" data-filter="expansion">Expansion</button> -->
         </div>
         <div class="row g-4" id="news-container">
