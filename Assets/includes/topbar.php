@@ -13,7 +13,7 @@
                                     class="fas fa-fax text-primary me-2"></i>+251-256-663745</a>
                         </div>
                         <div class="ps-3">
-                            <a href="mailto:example@gmail.com" class="text-muted small"><i
+                            <a ref="tel:0256663745" class="text-muted small"><i
                                     class="fas fa-phone-alt text-primary me-2"></i>025 666
                                 3745 ,025 666 4078</a>
                         </div>
@@ -23,7 +23,7 @@
                         </div>
 
                         <div class="ps-3">
-                            <a href="webmail.hararmfi.com" class="text-muted small"
+                            <a href="https://webmail.hararmfi.com" class="text-muted small"
                                 target="_blank" title="Webmail">
                                 <img src="img/webmail_logo.png" alt="Webmail"
                                     style="height:14px;vertical-align:middle;">
